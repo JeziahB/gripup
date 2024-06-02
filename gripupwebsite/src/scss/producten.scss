@@ -1,0 +1,407 @@
+@use 'style' as *;
+
+
+.titel_intro {
+  width: 80%;
+  margin: 5rem auto;
+  h1 {
+    width: 40%;
+    font-size: 80px;
+    color: $color-white;
+    box-shadow: inset 0 0 0 0 $color-white;
+    transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+    &:hover {
+      box-shadow: inset 0 -200px 0 0  $color-white;
+      color: $color-white ;
+    }
+  }
+}
+.producten::-webkit-scrollbar {
+  display: none;
+}
+
+.filter_and_products {
+  padding-top: 2rem;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  .filter {
+    width: 20%;
+
+    p {
+      font-size: 20px;
+      margin: 0 0 0 1rem;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    hr {
+      width: 100%;
+    }
+  }
+
+  .checkBox {
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px #fff;
+  }
+
+  .filter_component {
+    display: flex;
+
+    margin: 0 0 2rem 0;
+  }
+
+  .underline {
+    width: 30%;
+    margin: 0 auto 2rem 0;
+  }
+
+
+  .producten_incol {
+    display: flex;
+    width: 100%;
+
+    margin-top: 5%;
+    h3 {
+      color: $color-yellow;
+      
+      font-size: 24px;
+
+    }
+    .producten {
+
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+
+      margin: 0 0 5rem 0;
+      width: 100%;
+      height: 60vh;
+      overflow-y: scroll;
+      -ms-overflow-style: none;
+      align-items: center;
+      &:hover {
+
+      }
+      .detail {
+        flex: 0 0 calc(25% - 10px); // Hier 25% betekent dat er 4 items naast elkaar passen, met 20px ruimte tussen hen
+        box-sizing: border-box;
+      }
+
+      .product {
+        width: 60%;
+        height: 400px;
+        transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+        margin-top: 2rem;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        &:hover {
+          box-shadow: 0 0 20px $color-yellow;
+          border-color: $color-yellow;
+          cursor: pointer;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 16px 16px 0 0;
+
+        }
+
+        h3 {
+          margin: 3px 0 0 10px;
+          font-size: 14px;
+          color: $color-white;
+        }
+
+        .bottom {
+          position: absolute;
+          bottom: 15px;
+
+        }
+
+        p {
+          margin: 3px 0 0 10px;
+          color: $color-white;
+        }
+
+        .right {
+          float: right;
+          right: 15px;
+        }
+
+        span {
+          margin: 0 0 0 2rem;
+        }
+
+        button {
+          font-size: 10px;
+          padding: 3px 5px;
+          border: none;
+          color: $color-white;
+          border-radius: 7px;
+
+          background: $color-white;
+
+
+
+
+        }
+      }
+    }
+  }
+}
+
+.imgsmaller {
+  width: 20%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .filter_and_product {
+
+
+
+    .filter_component {
+      display: flex;
+      margin: 0 0 2rem 0;
+
+    }
+
+
+
+
+    .producten_incol {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+
+      .producten {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto 5rem auto;
+        width: 100%;
+
+
+        .product {
+          width: 30%;
+          height: 400px;
+          background-color: #363636;
+          transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+
+          &:hover {
+            box-shadow: 0 0 20px $color-yellow;
+            border-color: $color-yellow;
+            cursor: pointer;
+          }
+
+
+        }
+      }
+    }
+  }
+}
+
+
+.product-summary {
+  h2 {
+    color: white;
+  }
+  .product-summary-item {
+    width: 10%;
+    p {
+      color: white;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .titel_intro {
+    width: 80%;
+    margin: 5rem auto;
+    h1 {
+      width: 40%;
+      font-size: 80px;
+      color: $color-white;
+      box-shadow: inset 0 0 0 0 $color-white;
+      transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+      &:hover {
+        box-shadow: inset 0 -200px 0 0  $color-white;
+        color: $color-white ;
+      }
+    }
+  }
+  .producten::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter_and_products {
+    padding-top: 2rem;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .filter {
+      width: 20%;
+
+      p {
+        font-size: 20px;
+        margin: 0 0 0 1rem;
+      }
+
+      h2 {
+        margin-bottom: 2rem;
+      }
+
+      hr {
+        width: 100%;
+      }
+    }
+
+    .checkBox {
+      display: block;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255, 255, 255, 0);
+      border-radius: 5px;
+      box-shadow: 0 0 0 2px #fff;
+    }
+
+    .filter_component {
+      display: flex;
+
+      margin: 0 0 2rem 0;
+    }
+
+    .underline {
+      width: 30%;
+      margin: 0 auto 2rem 0;
+    }
+
+
+    .producten_incol {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      margin-top: 5%;
+      h3 {
+        color: $color-yellow;
+
+        font-size: 24px;
+
+      }
+      .producten {
+
+        display: flex;
+        flex-direction: column;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+
+        margin: 0 0 2rem 0;
+        width: 90%;
+        height: 60vh;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        align-items: center;
+        &:hover {
+
+        }
+        .detail {
+          flex: 0 0 calc(25% - 10px); // Hier 25% betekent dat er 4 items naast elkaar passen, met 20px ruimte tussen hen
+          box-sizing: border-box;
+        }
+
+        .product {
+          width: 60%;
+          height: 400px;
+          transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+          margin-top: 2rem;
+          padding: 1rem;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+          &:hover {
+            box-shadow: 0 0 20px $color-yellow;
+            border-color: $color-yellow;
+            cursor: pointer;
+          }
+
+          img {
+            width: 100%;
+            border-radius: 16px 16px 0 0;
+
+          }
+
+          h3 {
+            margin: 3px 0 0 10px;
+            font-size: 14px;
+            color: $color-white;
+          }
+
+          .bottom {
+            position: absolute;
+            bottom: 15px;
+
+          }
+
+          p {
+            margin: 3px 0 0 10px;
+            color: $color-white;
+          }
+
+          .right {
+            float: right;
+            right: 15px;
+          }
+
+          span {
+            margin: 0 0 0 2rem;
+          }
+
+          button {
+            font-size: 10px;
+            padding: 3px 5px;
+            border: none;
+            color: $color-white;
+            border-radius: 7px;
+
+            background: $color-white;
+
+
+
+
+          }
+        }
+      }
+    }
+  }
+
+  .imgsmaller {
+    width: 20%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

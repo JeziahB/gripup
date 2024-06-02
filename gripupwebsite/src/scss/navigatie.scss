@@ -1,0 +1,414 @@
+@use 'style' as *;
+
+* {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+
+  .navigatie {
+    position: absolute;
+    right: 0; /* Change left to right */
+    top: 0;
+    height: 100vh;
+    width: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 50; /* Lower z-index than menu button */
+    transition: background-color 0.4s, width 0.4s;
+    overflow: hidden;
+  }
+
+  .navigatie.opened {
+    width: 50%; /* Expands to cover the right half when menu is opened */
+    z-index: 50; /* Ensure it is below the menu button */
+  }
+
+  .logo img {
+    width: 10%;
+    height: auto;
+    margin: 2rem;
+  }
+
+  button {
+    margin-left: auto;
+  }
+
+  .navknoppe {
+    display: none;
+  }
+
+  .navigatie.opened .navknoppe {
+    display: block;
+    padding-top: 5rem; /* Add padding to move the items down */
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style-type: none;
+    text-align: right;
+  }
+
+  li {
+    font-size: 50px;
+    font-weight: lighter;
+    margin-top: 1rem;
+    background-color: black;
+    &:hover {
+      background-color: white !important;
+      color: black !important;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        background-color: white !important;
+        color: black !important;
+      }
+    }
+  }
+
+
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .menu {
+    z-index: 999;
+  }
+  .menubutton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    z-index: 999;
+    font-size: 1rem;
+    border-radius: 0;
+
+    transition: none;
+    box-shadow: 0px 0px 0px 0px $color-yellow;
+    &:hover {
+      transform: translate(0px, 0px);
+    }
+  }
+
+  .line {
+    fill: none;
+    stroke: white;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 3;
+  }
+
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 3;
+  }
+
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 3;
+  }
+
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 3;
+  }
+
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 3;
+  }
+
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 3;
+  }
+}
+
+.footer {
+  padding: 2rem 2rem 0 2rem;
+  background-color: black;
+  background-image: url("../assets/images/darklogogripup.svg");
+  background-repeat: no-repeat;
+
+  background-size: 800px;
+  background-position: right;
+  i {
+    color: $color-yellow;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  hr {
+    margin-bottom: 3rem;
+  }
+  img {
+    width: 2%;
+  }
+  h4 {
+    color: $color-white;
+  }
+  .privacy_terms {
+    margin-top: 2rem;
+    h5 {
+      color: $color-white;
+      font-weight: 100;
+      font-size: 16px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-white;
+    font-weight: 100;
+    font-size: 16px;
+  }
+  .footerflex {
+    display: flex;
+  }
+  .footerpart {
+    margin: 3rem 0 0 0;
+    h4 {
+      line-height: 2rem;
+      font-family: 'Segoe UI', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+    }
+    .nav-list {
+      margin: 0 15rem;
+      li {
+        font-size: 18px;
+        line-height: 2rem;
+      }
+    }
+    iframe {
+      margin-left: 5rem;
+      margin-top: 0;
+      padding-bottom: 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    background-color: $color-black;
+    .navigatie {
+      position: absolute;
+      right: 0; /* Change left to right */
+      top: 0;
+      height: 100vh;
+      width: 0;
+      background-color: rgba(0,0,0,0);
+      z-index: 50; /* Lower z-index than menu button */
+      transition: background-color 0.4s, width 0.4s;
+      overflow: hidden;
+    }
+
+    .navigatie.opened {
+      width: 50%; /* Expands to cover the right half when menu is opened */
+      z-index: 50; /* Ensure it is below the menu button */
+    }
+
+    .logo img {
+      width: 10%;
+      height: auto;
+      margin: 2rem;
+    }
+
+    button {
+      margin-left: auto;
+    }
+
+    .navknoppe {
+      display: none;
+    }
+
+    .navigatie.opened .navknoppe {
+      display: block;
+      padding-top: 5rem; /* Add padding to move the items down */
+    }
+
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      list-style-type: none;
+      text-align: right;
+    }
+
+    li {
+      font-size: 50px;
+      font-weight: lighter;
+      margin-top: 1rem;
+      background-color: black;
+      &:hover {
+        background-color: white !important;
+        color: black !important;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+          background-color: white !important;
+          color: black !important;
+        }
+      }
+    }
+
+
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .menu {
+      z-index: 999;
+
+    }
+    .menubutton {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      padding: 0;
+      z-index: 999;
+      font-size: 1rem;
+      border-radius: 0;
+
+      transition: none;
+      box-shadow: 0px 0px 0px 0px $color-yellow;
+      &:hover {
+        transform: translate(0px, 0px);
+      }
+    }
+
+    .line {
+      fill: none;
+      stroke: white;
+      stroke-width: 3;
+      transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .line1 {
+      stroke-dasharray: 60 207;
+      stroke-width: 3;
+    }
+
+    .line2 {
+      stroke-dasharray: 60 60;
+      stroke-width: 3;
+    }
+
+    .line3 {
+      stroke-dasharray: 60 207;
+      stroke-width: 3;
+    }
+
+    .opened .line1 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 3;
+    }
+
+    .opened .line2 {
+      stroke-dasharray: 1 60;
+      stroke-dashoffset: -30;
+      stroke-width: 3;
+    }
+
+    .opened .line3 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 3;
+    }
+  }
+
+  .footer {
+    padding: 2rem 2rem 0 2rem;
+    background-color: black;
+    background-image: url("../assets/images/darklogogripup.svg");
+    background-repeat: no-repeat;
+
+    background-size: 800px;
+    background-position: right;
+    i {
+      color: $color-yellow;
+      margin-right: 1rem;
+      margin-top: 1rem;
+    }
+    hr {
+      margin-bottom: 3rem;
+    }
+    img {
+      width: 5%;
+    }
+    h4 {
+      color: $color-white;
+    }
+    .privacy_terms {
+      margin-top: 2rem;
+      h5 {
+        color: $color-white;
+        font-weight: 100;
+        font-size: 16px;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-white;
+      font-weight: 100;
+      font-size: 16px;
+    }
+    .footerflex {
+      display: flex;
+      flex-direction: column;
+    }
+    .footerpart {
+      margin: 3rem 0 0 0;
+      h4 {
+        line-height: 2rem;
+        font-family: 'Segoe UI', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+      }
+      .nav-list {
+        margin: 0 1rem;
+        li {
+          font-size: 18px;
+          line-height: 2rem;
+        }
+      }
+      iframe {
+        width: 80vw;
+        margin-left: 1rem;
+        margin-top: 0;
+        padding-bottom: 5rem;
+      }
+    }
+  }
+}

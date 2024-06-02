@@ -1,0 +1,32 @@
+$color-yellow: rgb(218,253,0);
+$color-black: #181818;
+$color-white: #ffffff;
+$font: 'Insaniburger with Cheese', 'Segoe UI', sans-serif;
+
+h1 {
+  font-family: $font;
+}
+h2 {
+  font-family: $font;
+}
+button {
+  font-weight: 100;
+  font-size: 24px;
+  font-family: 'Insaniburger with Cheese', 'Segoe UI', sans-serif;
+  padding: 0.8em 2em;
+  background-color: $color-black;
+  border: 3px solid $color-yellow;
+  border-radius: 1em;
+  color: $color-white;
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+  box-shadow: -5px 5px 0px 0px $color-yellow;
+}
+
+button:hover {
+  transform: translate(5px, -5px);
+
+}
+body {
+  background-color: $color-black;
+  overflow-x: hidden !important;
+}

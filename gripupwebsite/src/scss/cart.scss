@@ -1,0 +1,204 @@
+@use 'style' as *;
+
+.cartoverview {
+  margin: 0 auto;
+  padding-top: 7rem;
+  width: 60%;
+  h2 {
+  font-weight: 100;
+    font-size: 32px;
+
+  }
+
+  .winkelkar {
+    width: 100%;
+    padding: 2rem 0 10rem 0;
+    border-radius: 15px;
+    border: 1px solid $color-white;
+    margin: 3rem 0;
+    h3 {
+      color: $color-white;
+      padding: 1rem 2rem  ;
+    }
+    .cart {
+      display: flex;
+      padding: 0 2rem  ;
+      h2 {
+        color: $color-yellow !important;
+      }
+      .smallerdiv {
+        width: 12%;
+        img {
+          width: 100%;
+        }
+      }
+      .marginchange {
+        display: flex;
+        width: 88%;
+        .calculateprod {
+          margin-right: 4rem;
+          margin-left: auto;
+          display: flex;
+          align-self: center;
+          align-items: center;
+          align-content: center;
+          height: 100%;
+          p {
+            font-size: 18px;
+
+          }
+          hr {
+            height: 2rem;
+            margin: 0 1rem;
+          }
+          .amount {
+            display: flex;
+            flex-direction: column;
+
+          }
+          .priceproduct {
+            width: 50px;
+          }
+          button {
+            font-weight: 800;
+            font-size: 18px;
+            font-family:  'Segoe UI', sans-serif;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            color: $color-white;
+            transition: none;
+            box-shadow: none;
+          }
+          button:hover {
+            transform: translate(0px, 0px);
+
+          }
+        }
+      }
+    }
+    .totaal_bedrag {
+      text-align: right;
+      margin-right: 4rem;
+
+    }
+  }
+}
+.nav-list-link {
+  button {
+    float: right;
+    margin-right: 4rem;
+    margin-top: 2rem;
+  }
+}
+.lijn {
+  hr {
+    width: 95%;
+    margin: 0 auto;
+  }
+  }
+
+
+@media screen and (max-width: 600px ) {
+
+  .cartoverview {
+    margin: 0 auto;
+    padding-top: 7rem;
+    width: 90%;
+    h2 {
+      font-weight: 100;
+      font-size: 32px;
+
+    }
+
+    .winkelkar {
+      width: 100%;
+      padding: 2rem 0 10rem 0;
+      border-radius: 15px;
+      border: 1px solid $color-white;
+      margin: 3rem 0;
+      h3 {
+        color: $color-white;
+        padding: 1rem 2rem  ;
+      }
+      .cart {
+        display: flex;
+        padding: 0 2rem  ;
+
+        h2 {
+          color: $color-yellow !important;
+        }
+        .smallerdiv {
+          width: 15%;
+          img {
+            width: 100%;
+          }
+        }
+        .marginchange {
+          display: flex;
+          flex-direction: column;
+          width: 88%;
+          .calculateprod {
+            margin-right: 4rem;
+            margin-left: auto;
+            display: flex;
+            align-self: center;
+            align-items: center;
+            align-content: center;
+            height: 100%;
+            p {
+              font-size: 18px;
+
+            }
+            hr {
+              height: 2rem;
+              margin: 0 1rem;
+            }
+            .amount {
+              display: flex;
+              flex-direction: column;
+
+            }
+            .priceproduct {
+              width: 50px;
+            }
+            button {
+              font-weight: 800;
+              font-size: 18px;
+              font-family:  'Segoe UI', sans-serif;
+              padding: 0;
+              border: 0;
+              margin: 0;
+              color: $color-white;
+              transition: none;
+              box-shadow: none;
+            }
+            button:hover {
+              transform: translate(0px, 0px);
+
+            }
+          }
+        }
+      }
+      .totaal_bedrag {
+        text-align: right;
+        margin-right: 4rem;
+
+      }
+    }
+  }
+  .nav-list-link {
+    button {
+      float: right;
+      margin-right: 4rem;
+      margin-top: 2rem;
+    }
+  }
+  .lijn {
+    hr {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+
+}

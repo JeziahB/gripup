@@ -1,0 +1,354 @@
+@use 'style' as *;
+.filter_and_product {
+  margin-bottom: 5rem;
+  padding-top: 7rem;
+  width: 90% !important;
+
+  .flexdetail {
+    width: 90%;
+    margin-left: 7rem;
+    .related {
+      width: 10%;
+      border-right: 1px solid $color-white;
+      border-left: 1px solid $color-white;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-weight: 700;
+        rotate: -90deg;
+       text-align: right;
+        margin-top: 3rem;
+        font-size: 36px;
+        color: $color-yellow;
+        font-family:  'Segoe UI', sans-serif;
+        span {
+          color: $color-white;
+          font-weight:700;
+          font-family:  'Segoe UI', sans-serif;
+        }
+      }
+      .related-products {
+        display: flex !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin-top: auto;
+        .related-product {
+          display: flex !important;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            max-width: 60%;
+            padding: 1rem;
+            height: auto;
+            border: 1px solid $color-white;
+            align-self: center;
+            &:hover {
+              box-shadow: 0 0 15px $color-yellow;
+            }
+          }
+        }
+
+      }
+
+
+    }
+    .infodetail {
+      width: 50%;
+      padding-left: 2rem;
+      h3 {
+        font-size: 96px;
+        font-weight: 100;
+        color: rgba(0,0,0,0);
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $color-yellow;
+        font-family: 'Insaniburger with Cheese', 'Segoe UI', sans-serif;
+      }
+      .toevoegenproduct {
+        display: flex;
+        margin-top: 30%;
+        p {
+          align-self: center;
+        }
+      }
+      .counter {
+      padding: 0 2rem;
+      display: flex;
+
+        span {
+          font-size: 24px;
+          color: $color-yellow;
+          font-weight: 400;
+        }
+        div {
+          display: flex;
+          flex-direction: column;
+        }
+        button {
+          font-weight: 800;
+          font-size: 24px;
+          font-family:  'Segoe UI', sans-serif;
+          padding: 0;
+          margin: 0 1rem;
+          border: none;
+          border-radius: 0;
+          color: $color-white;
+          transition: none;
+          box-shadow: none;
+        }
+
+        button:hover {
+          transform: none;
+
+        }
+      }
+      button {
+        float: right;
+        margin-left: auto;
+        margin-right: 2rem;
+      }
+      .omschrijving {
+        width: 33%;
+      }
+      .prijs {
+        font-size: 32px;
+      }
+    }
+    .imgdetail {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      img {
+        align-self: center;
+
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .popup {
+    background: $color-black;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    width: 30%;
+    height: 10%;
+    box-shadow: 0 0 15px rgba($color-yellow, 1);
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: $color-white;
+  }
+
+  .close:hover {
+    color: $color-yellow;
+  }
+  p {
+    color: $color-white !important;
+    font-size: 24px;
+    font-weight: 200;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .filter_and_product {
+    margin-bottom: 5rem;
+    padding-top: 7rem;
+    width: 100% !important;
+
+    .flexdetail {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      margin-left: 0 !important;
+      .related {
+        width: 100%;
+        border-right: 0;
+        border-left: 0;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          font-weight: 700;
+          rotate: 0deg;
+          text-align: left;
+          margin-top: 3rem;
+          font-size: 36px;
+          margin-left: 0 !important;
+          color: $color-yellow;
+          font-family:  'Segoe UI', sans-serif;
+          span {
+            color: $color-white;
+            font-weight:700;
+            font-family:  'Segoe UI', sans-serif;
+          }
+        }
+        .related-products {
+          display: flex !important;
+          flex-wrap: nowrap;
+          flex-direction: row !important;
+          align-items: center;
+          margin-top: auto;
+          margin-left: 0 !important;
+          .related-product {
+            display: flex !important;
+            flex-wrap: nowrap;
+            flex-direction: row !important;
+            align-items: center;
+            margin-left: 0 !important;
+            img {
+              max-width: 60%;
+              padding: 1rem;
+              height: auto;
+              border: 1px solid $color-white;
+              align-self: center;
+              &:hover {
+                box-shadow: 0 0 15px $color-yellow;
+              }
+            }
+          }
+
+        }
+
+
+      }
+      .infodetail {
+        width:100%;
+        padding-left: 2rem;
+        h3 {
+          font-size: 64px;
+          font-weight: 100;
+          color: rgba(0,0,0,0);
+          -webkit-text-stroke-width: 1px;
+          -webkit-text-stroke-color: $color-yellow;
+          font-family: 'Insaniburger with Cheese', 'Segoe UI', sans-serif;
+        }
+        .toevoegenproduct {
+          display: flex;
+          margin-top: 10%;
+          flex-direction: column;
+          p {
+            align-self: flex-start;
+          }
+        }
+        .counter {
+          padding: 0 0;
+          display: flex;
+
+          span {
+            font-size: 24px;
+            color: $color-yellow;
+            font-weight: 400;
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+          }
+          button {
+            font-weight: 800;
+            font-size: 24px;
+            font-family:  'Segoe UI', sans-serif;
+            padding: 0;
+            margin:  1rem;
+            border: none;
+            border-radius: 0;
+            color: $color-white;
+            transition: none;
+            box-shadow: none;
+          }
+
+          button:hover {
+            transform: none;
+
+          }
+        }
+        button {
+          float: left;
+          margin-left: 0;
+          margin-right: 2rem;
+        }
+        .omschrijving {
+          width: 33%;
+        }
+        .prijs {
+          font-size: 32px;
+        }
+      }
+      .imgdetail {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        img {
+          align-self: center;
+
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .popup {
+      background: $color-black;
+      padding: 20px;
+      border-radius: 8px;
+      position: relative;
+      width: 80%;
+      height: 10%;
+      box-shadow: 0 0 15px rgba($color-yellow, 1);
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 24px;
+      color: $color-white;
+    }
+
+    .close:hover {
+      color: $color-yellow;
+    }
+    p {
+      color: $color-white !important;
+      font-size: 24px;
+      font-weight: 200;
+
+    }
+  }
+}
+

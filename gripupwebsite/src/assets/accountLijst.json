@@ -1,0 +1,42 @@
+[
+   {
+      "name": "Admin",
+      "email": "1@1",
+      "password": "1",
+      "address": "uknown__address",
+      "country": "unknown__country",
+      "shoppingCartState": []
+   },
+   {
+      "name": "Jeziah Berden",
+      "email": "jeziah.berden@gmail.com",
+      "password": "jeziah",
+      "address": "Hoeselt",
+      "country": "België",
+      "shoppingCartState": []
+   },
+   {
+      "name": "Davy Meykens",
+      "email": "davy@gmail.com",
+      "password": "davy",
+      "address": "Tongeren",
+      "country": "België",
+      "shoppingCartState": []
+   },
+   {
+      "name": "Thomas Peeters",
+      "email": "thomas@gmail.com",
+      "password": "thomas",
+      "address": "Hasselt",
+      "country": "België",
+      "shoppingCartState": []
+   },
+   {
+      "name": "Mathias Talloru",
+      "email": "mathias@gmail.com",
+      "password": "mathias",
+      "address": "Bilzen",
+      "country": "België",
+      "shoppingCartState": []
+   }
+]

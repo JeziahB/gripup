@@ -1,0 +1,295 @@
+@use 'style' as *;
+.home_page {
+
+  background-image: url("../assets/images/gripupsvg2.svg");
+  background-repeat: no-repeat;
+  background-size: 38%;
+
+  background-position: right;
+  background-position-x: 118%;
+  background-position-y:36%;
+}
+section {
+  width: 100%;
+
+
+  .cards {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    margin: auto;
+
+
+    .allproduct, .builditcard {
+      margin: 2rem;
+      padding: 1rem;
+     width: 25vw;
+      .imgcontainer {
+        height: 15vw;
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 15vw;
+          align-self: center;
+          margin: 2rem auto;
+        }
+      }
+      h4 {
+        color: white;
+        font-family: 'Insaniburger with Cheese', 'Segoe UI', sans-serif;
+        font-weight: 100;
+        font-size: 32px;
+      }
+      p {
+        color: white;
+      }
+      button {
+        padding: 0.5rem 1rem;
+        background-color: $color-black;
+        border-radius: 10px;
+        margin-top: 1rem;
+        color: $color-white;
+        &:hover {
+          background-color: $color-black;
+          color: $color-yellow;
+          border: 3px solid $color-white;
+          box-shadow: -5px 5px 0px 0px $color-white;
+        }
+      }
+    }
+  }
+}
+
+.stand_for {
+  margin-top: 5rem;
+  h2 {
+    font-weight: 100;
+    font-size: 32px;
+    color: $color-white !important;
+    width: 60%;
+    padding-left: 6rem;
+  }
+
+  .creativity {
+    width: 100%;
+    margin-top: 1rem;
+    h3 {
+      font-size: 64px;
+      color: $color-yellow;
+      font-family: 'Insaniburger with Cheese', 'Segoe UI', sans-serif;
+      font-weight: 100;
+    }
+    .quoteadam {
+      display: flex;
+      .quote {
+        width: 40%;
+        padding: 0 6rem;
+        .passion {
+          width: 50%;
+          h3 {
+            font-size: 64px;
+            color: $color-yellow;
+            font-family: 'Insaniburger with Cheese', 'Segoe UI', sans-serif;
+            font-weight: 100;
+            text-align: left;
+          }
+          p {
+            color: $color-white;
+            text-align: left;
+            font-size: 24px;
+            span {
+              color: $color-yellow;
+              font-weight: 100;
+              text-transform: uppercase;
+              text-decoration: underline;
+              font-size: 24px;
+            }
+          }
+        }
+        .crea_intro {
+          margin-top: 0;
+          margin-bottom: 4rem;
+        }
+        span {
+          font-size: 100px;
+          color: $color-yellow;
+          font-family: 'Insaniburger with Cheese', 'Segoe UI', sans-serif;
+          font-weight: 100;
+        }
+        p {
+          color: $color-white;
+          font-size: 18px;
+          line-height: 2rem;
+          margin: 2rem 0;
+        }
+        .adam_ondra {
+          font-size: 36px;
+          color: $color-yellow;
+          font-family: 'Insaniburger with Cheese', 'Segoe UI', sans-serif;
+          font-weight: 10;
+          text-align: right;
+          margin-bottom: 0;
+        }
+        .prof_climber {
+          margin: 0;
+          text-align: right;
+        }
+      }
+      .adampicture {
+        width: 60%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .home_page {
+
+    background-image: url("../assets/images/gripupsvg2.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+
+    background-position: right;
+    background-position-x: 118%;
+    background-position-y:40%;
+  }
+  section {
+    width: 100%;
+
+
+    .cards {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      margin: auto;
+      margin-top: -7rem;
+
+
+      .allproduct, .builditcard {
+        margin: 2rem;
+        padding: 1rem;
+        width: 80vw;
+        .imgcontainer {
+          height: 50vw;
+          display: flex;
+          flex-direction: column;
+          img {
+            width: 50vw;
+            align-self: center;
+            margin: 2rem auto;
+          }
+        }
+        h4 {
+          color: white;
+          font-family: 'Insaniburger with Cheese', 'Segoe UI', sans-serif;
+          font-weight: 100;
+          font-size: 32px;
+        }
+        p {
+          color: white;
+        }
+        button {
+          padding: 0.5rem 1rem;
+          background-color: $color-black;
+          border-radius: 10px;
+          margin-top: 1rem;
+          color: $color-white;
+          &:hover {
+            background-color: $color-black;
+            color: $color-yellow;
+            border: 3px solid $color-white;
+            box-shadow: -5px 5px 0px 0px $color-white;
+          }
+        }
+      }
+    }
+  }
+
+  .stand_for {
+    margin-top: 5rem;
+    h2 {
+      font-weight: 100;
+      font-size: 32px;
+      color: $color-white !important;
+      width: 100%;
+      padding-left: 1rem;
+    }
+
+    .creativity {
+      width: 100%;
+      margin-top: 1rem;
+      h3 {
+        font-size: 64px;
+        color: $color-yellow;
+        font-family: 'Insaniburger with Cheese', 'Segoe UI', sans-serif;
+        font-weight: 100;
+      }
+      .quoteadam {
+        display: flex;
+        .quote {
+          width: 100%;
+          padding: 0 1rem;
+          .passion {
+            width: 50%;
+            h3 {
+              font-size: 64px;
+              color: $color-yellow;
+              font-family: 'Insaniburger with Cheese', 'Segoe UI', sans-serif;
+              font-weight: 100;
+              text-align: left;
+            }
+            p {
+              color: $color-white;
+              text-align: left;
+              font-size: 24px;
+              span {
+                color: $color-yellow;
+                font-weight: 100;
+                text-transform: uppercase;
+                text-decoration: underline;
+                font-size: 24px;
+              }
+            }
+          }
+          .crea_intro {
+            margin-top: 0;
+            margin-bottom: 4rem;
+          }
+          span {
+            font-size: 100px;
+            color: $color-yellow;
+            font-family: 'Insaniburger with Cheese', 'Segoe UI', sans-serif;
+            font-weight: 100;
+          }
+          p {
+            color: $color-white;
+            font-size: 18px;
+            line-height: 2rem;
+            margin: 2rem 0;
+          }
+          .adam_ondra {
+            font-size: 36px;
+            color: $color-yellow;
+            font-family: 'Insaniburger with Cheese', 'Segoe UI', sans-serif;
+            font-weight: 10;
+            text-align: right;
+            margin-bottom: 0;
+          }
+          .prof_climber {
+            margin: 0;
+            text-align: right;
+          }
+        }
+        .adampicture {
+          width: 0%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
