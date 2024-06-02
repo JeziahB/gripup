@@ -3,7 +3,6 @@ import homeView from '../views/homeView.vue';
 import cartView from '../views/cartView.vue';
 import productView from '../views/productView.vue';
 import detailView from '../views/detailView.vue';
-import loginView from '../views/loginView.vue';
 import checkoutView from '../views/checkoutView.vue';
 import bevestigingView from '../views/bevestigingView.vue';
 import buildupView from '../views/buildupView.vue';
@@ -20,7 +19,7 @@ const routes = [
         component: detailView,
         props: true
     },
-    { path: '/login', component: loginView },
+
     { path: '/checkout', component: checkoutView },
     { path: '/bevestiging', component: bevestigingView },
     { path: '/buildup', component: buildupView },
