@@ -43,7 +43,9 @@ export default {
   <nav>
     <div class="flex">
       <div class="logo">
+        <router-link to="/">
         <img src="../assets/images/GripUpLogo.png" alt="GripUpLogo">
+        </router-link>
       </div>
       <div class="menu" ref="menu">
         <button class="menubutton" @click="toggleMenu" aria-label="Main Menu">

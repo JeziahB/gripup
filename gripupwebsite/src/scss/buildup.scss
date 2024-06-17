@@ -29,9 +29,10 @@
     grid-template-rows: repeat(5, 1fr);
     gap: calc((1000px / 12) * 0.1);
     padding: 2rem 2rem 1rem 1.2rem;
-    background:
-            radial-gradient(circle at 10px 10px, #888 10%, transparent 11%) 0 0 / 15px 15px,
-            blanchedalmond;
+    background-image: url("../assets/images/wallbackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -2rem;
   }
 
   .square {
@@ -163,9 +164,9 @@
 
 
     .tekstbuildup {
-      margin-top: 5%;
+      margin-top: 10%;
       h2 {
-        margin: 1rem 5rem;
+        margin: 5rem 5rem 1rem 5rem;
         color: $color-yellow;
       }
       p {
@@ -186,9 +187,10 @@
       grid-template-rows: repeat(5, 1fr);
       gap: calc((400px / 12) * 0.1);
       padding: 1rem 1rem 1rem 1rem;
-      background:
-              radial-gradient(circle at 10px 10px, #888 10%, transparent 11%) 0 0 / 15px 15px,
-              blanchedalmond;
+      background-image: url("../assets/images/wallbackground.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-y: -2rem;
     }
 
     .square {

@@ -1,14 +1,20 @@
 <template>
   <div class="footer">
+    <router-link to="/">
     <img src="../assets/images/GripUpLogo.png" alt="GripUpLogo">
+    </router-link>
     <div class="footerflex">
       <div class="footerpart">
         <h4>Elfde-Liniestraat 24, 3500 Hasselt</h4>
         <h4>0444 44 44 44</h4>
         <h4>gripup.climbing@gmail.com</h4>
         <div class="privacy_terms">
+          <router-link to="/terms">
           <h5>Terms and Conditions</h5>
+          </router-link>
+          <router-link to="/privacy">
           <h5>Privacy Policy</h5>
+          </router-link>
           <a href="https://www.instagram.com/gripup.shop/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://www.linkedin.com/in/gripup-shop-721537311/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
@@ -61,10 +67,6 @@ export default {
         {
           path: "/contact",
           name: "CONTACT"
-        },
-        {
-          path: "/profile",
-          name: "PROFILE"
         }
       ],
     }

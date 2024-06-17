@@ -27,7 +27,9 @@
             <option value="bankTransfer">Bank Transfer</option>
           </select>
         </div>
+        <router-link to="/product">
         <button type="submit">Submit</button>
+        </router-link>
       </form>
     </div>
     <div class="checkout-right">

@@ -7,6 +7,9 @@ import checkoutView from '../views/checkoutView.vue';
 import bevestigingView from '../views/bevestigingView.vue';
 import buildupView from '../views/buildupView.vue';
 import contactView from '../views/contactView.vue';
+import termsView from "../views/termsView.vue";
+import privacyView from "../views/privacyView.vue";
+
 
 const routes = [
     { path: '/', component: homeView },
@@ -23,7 +26,9 @@ const routes = [
     { path: '/checkout', component: checkoutView },
     { path: '/bevestiging', component: bevestigingView },
     { path: '/buildup', component: buildupView },
-    { path: '/contact', component: contactView }
+    { path: '/contact', component: contactView },
+    { path: '/terms', component: termsView },
+    { path: '/privacy', component: privacyView }
 ];
 
 const router = createRouter({

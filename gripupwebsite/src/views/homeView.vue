@@ -20,7 +20,9 @@
           </div>
           <h4>Build up your route</h4>
           <p>Try out our new 'building a route' tool. Here, you can build up and visualize your route before buying the grips.</p>
-          <a href="buildupView.vue"><button>LETS BUILD</button></a>
+          <router-link to="/buildup">
+           <button>LETS BUILD</button>
+          </router-link>
         </div>
       </div>
     </section>

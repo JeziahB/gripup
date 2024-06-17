@@ -206,7 +206,19 @@ nav {
     }
   }
 }
+.textpages {
+  width: 80%;
+  margin: 0 auto 3rem auto;
 
+  h1 {
+    color: $color-yellow;
+    padding: 5rem 0 2rem 0;
+  }
+  p {
+    color: $color-white;
+    margin: 0.5rem 0;
+  }
+}
 @media screen and (max-width: 600px) {
   nav {
     position: fixed;
